@@ -1,0 +1,15 @@
+name: t2
+on: workflow_dispatch
+jobs:
+  m13:
+    runs-on: macos-13
+    steps:
+      - run: echo ok13
+  m15:
+    runs-on: macos-15
+    steps:
+      - run: echo ok15
+  mlatest:
+    runs-on: macos-latest
+    steps:
+      - run: echo oklatest
